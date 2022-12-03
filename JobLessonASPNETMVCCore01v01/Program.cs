@@ -1,4 +1,7 @@
 ﻿
+
+
+
 Task1();
 
 Task2();
@@ -20,6 +23,9 @@ static void Task1()
     Console.WriteLine($"Инициализация массива заняла у нас: {finish - start} сек.");
 }
 
+///<summary>
+///Метод использует потоки
+///</summary>
 static void Task2()
 {
     float[] arr = new float[100_000_000];
@@ -30,3 +36,6 @@ static void Task2()
     }
 
     DateTime finish = DateTime.Now;
+
+    Console.WriteLine($"Инициализация массива заняла у нас: {finish - start} сек.");
+}
